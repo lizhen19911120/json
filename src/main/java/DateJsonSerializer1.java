@@ -17,4 +17,5 @@ public class DateJsonSerializer1 extends JsonSerializer<LocalDate> {
     public void serialize(LocalDate value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
         gen.writeString(format.format(value));
     }
+
 }
